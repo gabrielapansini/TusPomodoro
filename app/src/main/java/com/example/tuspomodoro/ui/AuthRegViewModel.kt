@@ -25,7 +25,7 @@ class AuthRegViewModel : ViewModel() {
             errorMessage.postValue("email or password cannot be empty")
             return
         }
-
+        //auth
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
